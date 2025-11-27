@@ -60,6 +60,12 @@
         .glow-icon {
             filter: drop-shadow(0 0 8px rgba(251, 191, 36, 0.5));
         }
+
+        /* Ensure list items are readable */
+        .list-item-dark {
+            background-color: rgba(30, 41, 59, 0.95); /* Slate 800 with slight opacity */
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
     </style>
 </head>
 <body class="pb-12">
@@ -245,7 +251,7 @@
 
     <!-- Modal Container -->
     <div id="student-list-modal" class="fixed inset-0 bg-black/70 z-50 hidden overflow-y-auto backdrop-blur-sm flex items-center justify-center p-4">
-        <div class="glass-card max-w-4xl w-full p-8 rounded-2xl relative m-auto animate-fade-in-up">
+        <div class="glass-card max-w-4xl w-full p-8 rounded-2xl relative m-auto animate-fade-in-up" style="background-color: #0f172a; border: 1px solid #334155;">
             <!-- Close Button -->
             <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-3xl transition-colors">
                 <i class="fas fa-times"></i>
@@ -258,38 +264,38 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- 五年级 Section -->
                 <div>
-                    <h3 class="text-2xl font-bold mb-4 text-blue-400 flex items-center sticky top-0 bg-[#0f172a]/90 p-2 rounded-lg backdrop-blur-sm z-10">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-400 flex items-center sticky top-0 bg-[#0f172a] p-2 rounded-lg z-10 border-b border-blue-900/50">
                         <span class="mr-3 bg-blue-500/20 w-8 h-8 rounded-full flex items-center justify-center text-sm border border-blue-400/50">5</span>
                         五年级
                     </h3>
                     <ul class="space-y-3 h-96 overflow-y-auto pr-2 custom-scrollbar">
-                        <li class="glass-card p-3 rounded-lg flex justify-between items-center hover:bg-white/10 transition-colors"><span>黄绣芯</span> <span class="text-gray-400 text-sm">《牧童之歌》</span></li>
-                        <li class="glass-card p-3 rounded-lg flex justify-between items-center hover:bg-white/10 transition-colors"><span>李若瑄</span> <span class="text-gray-400 text-sm">《最好的安排》</span></li>
-                        <li class="glass-card p-3 rounded-lg flex justify-between items-center hover:bg-white/10 transition-colors"><span>李佳慧</span> <span class="text-gray-400 text-sm">《传奇》</span></li>
-                        <li class="glass-card p-3 rounded-lg flex justify-between items-center hover:bg-white/10 transition-colors"><span>尤芷恩</span> <span class="text-gray-400 text-sm">《又见秋莲》</span></li>
-                        <li class="glass-card p-3 rounded-lg flex justify-between items-center hover:bg-white/10 transition-colors"><span>赖钦洋</span> <span class="text-gray-400 text-sm">《朋友》</span></li>
-                        <li class="glass-card p-3 rounded-lg flex justify-between items-center hover:bg-white/10 transition-colors"><span>蔡丽霞</span> <span class="text-gray-400 text-sm">《小美满》</span></li>
-                        <li class="glass-card p-3 rounded-lg flex justify-between items-center hover:bg-white/10 transition-colors"><span>孙诗涵</span> <span class="text-gray-400 text-sm">《小美满》</span></li>
-                        <li class="glass-card p-3 rounded-lg flex justify-between items-center hover:bg-white/10 transition-colors"><span>李恩哲</span> <span class="text-gray-400 text-sm">《土坡上的狗尾巴草》</span></li>
-                        <li class="glass-card p-3 rounded-lg flex justify-between items-center hover:bg-white/10 transition-colors"><span>曾健源</span> <span class="text-gray-400 text-sm">《苟活》</span></li>
-                        <li class="glass-card p-3 rounded-lg flex justify-between items-center hover:bg-white/10 transition-colors"><span>王竞德</span> <span class="text-gray-400 text-sm">《小人物的心声》</span></li>
-                        <li class="glass-card p-3 rounded-lg flex justify-between items-center hover:bg-white/10 transition-colors"><span>沈沁仪</span> <span class="text-gray-400 text-sm">《离开我的依赖》</span></li>
-                        <li class="glass-card p-3 rounded-lg flex justify-between items-center hover:bg-white/10 transition-colors"><span>陈彦君</span> <span class="text-gray-400 text-sm">《说唱脸谱》</span></li>
-                        <li class="glass-card p-3 rounded-lg flex justify-between items-center hover:bg-white/10 transition-colors"><span>何若郗</span> <span class="text-gray-400 text-sm">《如果可以》</span></li>
-                        <li class="glass-card p-3 rounded-lg flex justify-between items-center hover:bg-white/10 transition-colors"><span>郑仁颂</span> <span class="text-gray-400 text-sm">《朋友》</span></li>
+                        <li class="list-item-dark p-3 rounded-lg flex justify-between items-center hover:bg-slate-700 transition-colors"><span class="text-white font-medium">黄绣芯</span> <span class="text-yellow-400 text-sm">《牧童之歌》</span></li>
+                        <li class="list-item-dark p-3 rounded-lg flex justify-between items-center hover:bg-slate-700 transition-colors"><span class="text-white font-medium">李若瑄</span> <span class="text-yellow-400 text-sm">《最好的安排》</span></li>
+                        <li class="list-item-dark p-3 rounded-lg flex justify-between items-center hover:bg-slate-700 transition-colors"><span class="text-white font-medium">李佳慧</span> <span class="text-yellow-400 text-sm">《传奇》</span></li>
+                        <li class="list-item-dark p-3 rounded-lg flex justify-between items-center hover:bg-slate-700 transition-colors"><span class="text-white font-medium">尤芷恩</span> <span class="text-yellow-400 text-sm">《又见秋莲》</span></li>
+                        <li class="list-item-dark p-3 rounded-lg flex justify-between items-center hover:bg-slate-700 transition-colors"><span class="text-white font-medium">赖钦洋</span> <span class="text-yellow-400 text-sm">《朋友》</span></li>
+                        <li class="list-item-dark p-3 rounded-lg flex justify-between items-center hover:bg-slate-700 transition-colors"><span class="text-white font-medium">蔡丽霞</span> <span class="text-yellow-400 text-sm">《小美满》</span></li>
+                        <li class="list-item-dark p-3 rounded-lg flex justify-between items-center hover:bg-slate-700 transition-colors"><span class="text-white font-medium">孙诗涵</span> <span class="text-yellow-400 text-sm">《小美满》</span></li>
+                        <li class="list-item-dark p-3 rounded-lg flex justify-between items-center hover:bg-slate-700 transition-colors"><span class="text-white font-medium">李恩哲</span> <span class="text-yellow-400 text-sm">《土坡上的狗尾巴草》</span></li>
+                        <li class="list-item-dark p-3 rounded-lg flex justify-between items-center hover:bg-slate-700 transition-colors"><span class="text-white font-medium">曾健源</span> <span class="text-yellow-400 text-sm">《苟活》</span></li>
+                        <li class="list-item-dark p-3 rounded-lg flex justify-between items-center hover:bg-slate-700 transition-colors"><span class="text-white font-medium">王竞德</span> <span class="text-yellow-400 text-sm">《小人物的心声》</span></li>
+                        <li class="list-item-dark p-3 rounded-lg flex justify-between items-center hover:bg-slate-700 transition-colors"><span class="text-white font-medium">沈沁仪</span> <span class="text-yellow-400 text-sm">《离开我的依赖》</span></li>
+                        <li class="list-item-dark p-3 rounded-lg flex justify-between items-center hover:bg-slate-700 transition-colors"><span class="text-white font-medium">陈彦君</span> <span class="text-yellow-400 text-sm">《说唱脸谱》</span></li>
+                        <li class="list-item-dark p-3 rounded-lg flex justify-between items-center hover:bg-slate-700 transition-colors"><span class="text-white font-medium">何若郗</span> <span class="text-yellow-400 text-sm">《如果可以》</span></li>
+                        <li class="list-item-dark p-3 rounded-lg flex justify-between items-center hover:bg-slate-700 transition-colors"><span class="text-white font-medium">郑仁颂</span> <span class="text-yellow-400 text-sm">《朋友》</span></li>
                     </ul>
                 </div>
 
                 <!-- 六年级 Section -->
                 <div>
-                    <h3 class="text-2xl font-bold mb-4 text-purple-400 flex items-center sticky top-0 bg-[#0f172a]/90 p-2 rounded-lg backdrop-blur-sm z-10">
+                    <h3 class="text-2xl font-bold mb-4 text-purple-400 flex items-center sticky top-0 bg-[#0f172a] p-2 rounded-lg z-10 border-b border-purple-900/50">
                         <span class="mr-3 bg-purple-500/20 w-8 h-8 rounded-full flex items-center justify-center text-sm border border-purple-400/50">6</span>
                         六年级
                     </h3>
                     <ul class="space-y-3 h-96 overflow-y-auto pr-2 custom-scrollbar">
-                        <li class="glass-card p-3 rounded-lg flex justify-between items-center hover:bg-white/10 transition-colors"><span>黄依玲</span> <span class="text-gray-400 text-sm">《普通朋友》</span></li>
-                        <li class="glass-card p-3 rounded-lg flex justify-between items-center hover:bg-white/10 transition-colors"><span>吴梦琦</span> <span class="text-gray-400 text-sm">《如果可以》</span></li>
-                        <li class="glass-card p-3 rounded-lg flex justify-between items-center hover:bg-white/10 transition-colors"><span>陈芷而</span> <span class="text-gray-400 text-sm">《消散对白》</span></li>
+                        <li class="list-item-dark p-3 rounded-lg flex justify-between items-center hover:bg-slate-700 transition-colors"><span class="text-white font-medium">黄依玲</span> <span class="text-yellow-400 text-sm">《普通朋友》</span></li>
+                        <li class="list-item-dark p-3 rounded-lg flex justify-between items-center hover:bg-slate-700 transition-colors"><span class="text-white font-medium">吴梦琦</span> <span class="text-yellow-400 text-sm">《如果可以》</span></li>
+                        <li class="list-item-dark p-3 rounded-lg flex justify-between items-center hover:bg-slate-700 transition-colors"><span class="text-white font-medium">陈芷而</span> <span class="text-yellow-400 text-sm">《消散对白》</span></li>
                     </ul>
                 </div>
             </div>
